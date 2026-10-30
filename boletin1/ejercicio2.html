@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ejercicio 2</title>
+        <style>
+            table, th, td {border: 1px solid black; text-align: center; min-width: 80px;}
+            .ednes {background-color: yellow}
+            .badat {background-color: orange;}
+            .ipe {background-color: deepskyblue;}
+            .lmgsi {background-color: dodgerblue;}
+            .prog {background-color: green;}
+            .si {background-color: palevioletred;}
+            .digi {background-color: brown;}
+            .ocio {background-color: gray;}
+            .sost {background-color: chocolate;}
+        </style>
+    </head>
+    <body>
+        <table>
+          <thead>
+            <tr>
+             <td></td>
+             <th>Lunes</th>
+             <th>Martes</th>
+             <th>Miércoles</th>
+              <th>Jueves</th>
+              <th>Viernes</th>
+            </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <th>8:15</th>
+            <td rowspan="2" class="ednes">ENDES</td>
+            <td rowspan="2" class="badat">BADAT</td>
+            <td class="ipe">IPE1</td>
+            <td class="ipe">IPE1</td>
+            <td class="lmgsi">LMSGI</td>
+          </tr>
+          <tr>
+            <th>9:15</th>
+            <td class="lmgsi">LMSGI</td>
+            <td class="prog">PROG</td>
+            <td class="ipe">IPE1</td>
+          </tr>
+          <tr>
+            <th>10:15</th>
+            <td class="si">SI</td>
+            <td class="prog">PROG</td>
+            <td class="digi">Digitalización</td>
+            <td class="badat">BADAT</td>
+            <td class="badat">BADAT</td>
+          </tr>
+          <tr>
+            <th>11:15</th>
+            <td colspan="5" class="ocio">Segmento de Ocio</td>
+          </tr>
+          <tr>
+            <th>11:45</th>
+            <td rowspan="2" class="prog">PROG</td>
+            <td class="prog">PROG</td>
+            <td class="sost">Sostenibilidad</td>
+            <td class="ednes">ENDES</td>
+            <td rowspan="3" class="prog">PROG</td>
+          </tr>
+          <tr>
+            <th>12:45</th>
+            <td rowspan="2" class="si">SI</td>
+            <td rowspan="2" class="badat">BADAT</td>
+            <td rowspan="2" class="si">SI</td>
+          </tr>
+          <tr>
+            <th>13:45</th>
+            <td class="lmgsi">LMSGI</td>
+          </tr>
+          </tbody>
+          <tfoot>
+            <th>Horas total</th>
+            <td colspan="5">6 horas</td>
+          </tfoot>
+        </table>   
+    </body>
+</html>
