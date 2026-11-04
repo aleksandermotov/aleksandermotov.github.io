@@ -6,12 +6,38 @@
     </head>
     <body>
         <section> 
+            <h1>Section 1</h1>
             <iframe width="560" height="315" loading="lazy" title="Vídeo tutorial de HTML5" src="https://www.youtube.com/embed/AwJ4R-kDue4?si=tcdkWNqF3pViTC9W" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <embed src="media/apuntes.pdf" type="application/pdf" width="100%" height="500px">
          <object  data="[https://www.wikipedia.org](https://www.wikipedia.org)" type="text/html">Tu navegador no admite la visualización de este objeto incrustado</object>
         </section>
         <section>
-
+            <h1>Section 2</h1>
+            <video src="media/muestra.mp4" type="video/mp4" controls width="640" poster="media/portada.jpg">
+                <source src="media/muestra.webm" type="video/webm">
+                 Tu navegador no soporta la reproducción de vídeo.
+            </video>  
+            <audio controls src="media/pista.mp3" type="audio/mpeg">
+                <source src="media/pista.ogg" type="audio/ogg">
+            </audio> 
         </section>
-       </body>
+        <section>
+            <h1>Section 3</h1>
+            <svg width="200px" height="200px">
+                <rect fill="blue" width="100%" height="100%"></rect>
+                <circle fill="yellow" cx="100" cy="100" r="100" stroke="red"></circle>
+            </svg><br>
+            <canvas id="miLienzo" width="300" height="150">Tu navegador no soporta el elemento Canvas</canvas>
+        </section>
+        <script>
+            const canvas = document.getElementById('miLienzo');
+            const ctx = canvas.getContext('2d');
+            ctx.fillStyle = 'green';
+            ctx.fillRect(10, 10, 150, 80);
+            ctx.moveTo(0, 0);
+            ctx.lineTo(200, 100); 
+            ctx.stroke(); 
+        </script>
+
+        </body>
 </html>
