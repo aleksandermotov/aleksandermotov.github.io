@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Registro</title>
+    </head>
+    <body>
+        <form action="https://lm.ciclo.iesnervion.es/registro.php" method="POST">
+            <label for="codigo">Código de Alumno
+                <input type="text" name="codigo" id="codigo" placeholder="DAM123" pattern="[A-Z]{3}[0-9]{3}" required>
+            </label><br>
+            <label for="email">Correo corporativo
+                <input type="email" name="email" id="email" required>
+            </label><br>
+            <label for="edad">Edad
+                <input type="number" name="edad" id="edad" min="16" max="65" required>
+            </label><br>
+            <label for="telefono">Teléfono de contacto
+                <input type="tel" name="telefono" id="telefono" pattern="[0-9]{9}" required>
+            </label><br>
+            <label for="web">Sitio web / Portfolio
+                <input type="url" name="web" id="web">
+            </label><br>
+            <label for="ide">IDE Preferido
+                <input type="text" list="ide_opciones" name="ide" id="ide" required>
+                <datalist id="ide_opciones">
+                    <option value="IntelliJ IDEA">
+                    <option value="Visual Studio Code">
+                    <option value="Eclipse">
+                    <option value="Android Studio">
+                </datalist>
+            </label><br>
+            <label>Aceptación de la Política de Privacidad
+                <input type="checkbox" name="politica" id="politica" value="si" required>
+            </label><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </body>
+</html>
