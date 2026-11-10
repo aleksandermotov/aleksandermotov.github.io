@@ -7,24 +7,37 @@
     <body>
         <form action="https://lm.ciclo.iesnervion.es/encuesta.php" method="POST">
             <fieldset>
-                <legend>Datos Académicos
-                    <label>Nombre y Apellidos</label>
-                </legend>
+                <legend>Datos Académicos</legend>
+                <label for="nombre">Nombre y Apellidos
+                      <input type="text" name="nombre" id="nomre" required>
+                </label><br>
+                <label for="ciclo">Ciclo Formativo
+                      <select name="ciclo" id=ciclo">
+                        <option value="DAM" selected>DAM</option>
+                        <option value="DAW">DAW</option>
+                        <option value="ASIR">ASIR</option>
+                     </select>
+                 </label>         
             </fieldset>
             <fieldset>
                 <legend>Preferencias Técnicas</legend>
+                <label>Lenguaje principal
+                    <input type="radio" name="lenguaje" value="Java">Java
+                    <input type="radio" name="lenguaje" value="Python">Python
+                    <input type="radio" name="lenguaje" value="C#">C#
+                    <input type="radio" name="lenguaje" value="JavaScript">JavaScript
+                </label><br>
+                <label>Entornos de trabajo habituales
+                    <input type="checkbox" name="entornos[]" value="Linux">Linux
+                    <input type="checkbox" name="entornos[]" value="Windows">Windows
+                    <input type="checkbox" name="entornos[]" value="macOS">macOS
+                </label><br>
+                <label for="comentarios">Comentarios / Experiencia previa<br>
+                    <textarea name="comentarios" id="comentarios" rows="4" cols="40"></textarea>
+                </label>
             </fieldset>
+            <button type="reset">Restablecer</button>
+            <button type="submit">Enviar</button>
         </form>
     </body>
 </html>
-
-
-Agrupa los elementos en dos bloques principales utilizando <fieldset> y <legend>:
-Bloque 1: Datos Académicos
-Nombre y Apellidos (Campo de texto obligatorio) (nombre).
-Ciclo Formativo (Lista desplegable <select> con las opciones: DAM, DAW, ASIR). La opción DAM debe aparecer seleccionada por defecto. (ciclo)
-Bloque 2: Preferencias Técnicas
-Lenguaje principal (Botones de radio <input type="radio">: Java, Python, C#, JavaScript). Solo debe ser posible seleccionar uno a la vez. (lenguaje)
-Entornos de trabajo habituales (Casillas de verificación <input type="checkbox">: Linux, Windows, macOS). Permitir selección múltiple. (entornos)
-Comentarios / Experiencia previa (Área de texto <textarea> con 4 filas y 40 columnas). (comentarios)
-Añade un botón para restablecer el formulario (type="reset") y otro para enviar los datos (type="submit").
