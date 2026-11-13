@@ -3,45 +3,55 @@
     <head>
         <meta charset="utf-8">
         <title>Formulario de prueba de HTML5</title>
+        <style>
+            body {
+                width: 20%;
+                margin: 50px auto;
+            }
+            label {
+                display: flex;
+                justify-content: space-between;
+            }
+        </style>
     </head>
     <body>
         <form action="https://lm.ciclo.iesnervion.es/avanzado.php" method="GET">
             <label for="nombre">Nombre
                 <input type="text" name="nombre" id="nombre" required autofocus>
-            </label><br>
+            </label>
             <label for="email">Correo electronico
                 <input type="email" name="email" id="email" required>
-            </label><br>
+            </label>
             <label for="url">URL
                 <input type="url" name="url" id="url" placeholder="Escribe la URL de tu página web personal">
-            </label><br>
+            </label>
             <label for="fecha">Fecha
                 <input type="date" name="fecha" id="fecha">
-            </label><br>
+            </label>
             <label for="tiempo">Tiempo
                 <input type="time" name="tiempo" id="tiempo">
-            </label><br>
+            </label>
             <label for="fecha_hora">Fecha y hora
                 <input type="datetime" name="fecha_hora" id="fecha_hora">
-            </label><br>
+            </label>
             <label for="mes">Mes
                 <input type="month" name="mes" id="mes">
-            </label><br>
+            </label>
             <label for="semana">Semana
                 <input type="week" name="semana" id="semana">
-            </label><br>
+            </label>
             <label for="numero">Número
                 <input type="number" name="numero" id="numero" min="-10" max="10">
-            </label><br>
+            </label>
             <label for="telefono">Teléfono
                 <input type="tel" name="telefono" id="telefono">
-            </label><br>
+            </label>
             <label for="busqueda">Término de búsqueda
                 <input type="search" name="busqueda" id="busqueda">
-            </label><br>
+            </label>
             <label for="color">Color favorito
                 <input type="color" name="color" id="color">
-            </label><br>
+            </label>
             <button type="submit">Enviar</button>
         </form>
     </body>
